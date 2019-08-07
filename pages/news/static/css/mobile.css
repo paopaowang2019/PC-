@@ -1,0 +1,289 @@
+.head,
+.container .container-center .news-box {
+    display: none;
+}
+
+.head-mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* height: 100px; */
+    /* background-color: red; */
+}
+
+.head-mobile .head-center-mobile {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.head-mobile .head-center-mobile .logo-a-mobile {
+    display: block;
+    width: 221px;
+    height: 52px;
+    margin-left: 24px;
+    margin-top: 24px;
+    background-image: url(../../static/img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.head-center-mobile .btn-nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 80px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.head-center-mobile .btn-nav span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #888;
+    border-radius: 1px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.head-center-mobile .btn-nav span:nth-child(1) {
+    margin-top: 40px;
+}
+
+.head-center-mobile .btn-nav span:nth-child(n+2) {
+    margin-top: 10px;
+}
+
+.head-center-mobile .btn-nav.close-nav span:nth-child(1),
+.head-center-mobile .btn-nav.close-nav span:nth-child(3) {
+    -webkit-transition-delay: .8s;
+    transition-delay: .8s;
+}
+
+.head-center-mobile .btn-nav.active {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.head-center-mobile .btn-nav.active span:nth-child(1) {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+}
+
+.head-center-mobile .btn-nav.active span:nth-child(3) {
+    -webkit-transform: translateY(-12px) rotate(90deg);
+    transform: translateY(-12px) rotate(90deg);
+}
+
+.head-center-nav-mobile {
+    display: none;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+}
+
+.head-center-nav-mobile .nav-list-mobile {
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 20px;
+    color: #888
+}
+
+.head-center-nav-mobile .nav-list-mobile a {
+    color: #888;
+}
+
+.head-center-nav-mobile .nav-list-mobile:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #888;
+}
+
+.container {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.container .container-center {
+    width: 100%;
+}
+
+.container .container-center .news-box-mobile {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 45px;
+}
+
+.container .container-center .news-box-mobile .news-text-box {
+    position: static;
+    top: auto;
+    right: auto;
+    width: 100%;
+    height: auto;
+}
+
+.container .container-center .news-box-mobile .news-text-box .news-text {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.container .container-center .news-box-mobile .news-text-box .news-text:hover {
+    text-decoration: underline;
+    color: #989898;
+}
+
+.container .container-center .news-box-mobile .news-text-box .news-title {
+    position: relative;
+    font-size: 18px;
+    color: #6b6b6b;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.container .container-center .news-box-mobile .news-text-box .news-title-date {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.container .container-center .news-box-mobile .news-text-box .news-content {
+    font-size: 14px;
+    color: #989898;
+    line-height: 25px;
+}
+
+.container .container-center .news-box-mobile .news-img-box {
+    width: 100%;
+    width: 600px;
+    height: auto;
+}
+
+.container .container-center .news-box-mobile .news-img-box .news-img-1 {
+    width: 100%;
+    height: 200px;
+    background: url(../img/news-img-1.jpg) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.container .container-center .news-box-mobile .news-img-box .news-img-2 {
+    width: 100%;
+    height: 200px;
+    background: url(../img/news-img-2.jpg) no-repeat 0 0;
+    background-size: 100% 100%;
+    margin-top: 30px;
+}
+
+/* 底部样式开始 */
+.foot {
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+    margin-top: 20px;
+}
+
+.foot .foot-center {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.foot .foot-center .foot-center-left {
+    text-align: center;
+    position: static;
+    width: 100%;
+    height: 75px;
+    font-size: 16px;
+    color: #767676;
+    overflow: hidden;
+}
+
+.foot .foot-center .foot-center-left>p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.foot .foot-center .foot-center-left .media-box {
+    position: relative;
+    width: 140px;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.foot .foot-center .foot-center-middle {
+    position: static;
+    width: 100%;
+    height: 75px;
+    left: auto;
+    top: auto;
+    border-right: none;
+    border-left: none;
+    text-indent: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #767676;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.foot .foot-center .foot-center-right {
+    position: static;
+    width: 100%;
+    height: 75px;
+    right: auto;
+    top: auto;
+    text-indent: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #767676;
+}
+
+.foot .foot-center .foot-center-left .weibo {
+    position: static;
+    float: left;
+    width: 25px;
+    height: 25px;
+    left: auto;
+    top: auto;
+    margin-right: 22%;
+    background: url(../../static/img/xl.png) no-repeat 0 0;
+}
+
+.foot .foot-center .foot-center-left .qq {
+    position: static;
+    float: left;
+    width: 25px;
+    height: 25px;
+    left: auto;
+    top: auto;
+    margin-right: 22%;
+    background: url(../../static/img/qq.png) no-repeat 0 0;
+}
+
+.foot .foot-center .foot-center-left .wx {
+    position: static;
+    float: left;
+    width: 25px;
+    height: 25px;
+    left: auto;
+    top: auto;
+    background: url(../../static/img/wx.png) no-repeat 0 0;
+}
+
+/* 底部样式结束 */

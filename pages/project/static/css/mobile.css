@@ -1,0 +1,320 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.head {
+    display: none;
+}
+
+.continer .continer-center .project-nav {
+    display: none;
+}
+
+.continer .furnishing-box-2 {
+    display: none;
+}
+
+.head-mobile {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    /* height: 100px; */
+    /* background-color: red; */
+}
+
+.head-mobile .head-center-mobile {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.head-mobile .head-center-mobile .logo-a-mobile {
+    display: block;
+    width: 221px;
+    height: 52px;
+    margin-left: 24px;
+    margin-top: 24px;
+    background-image: url(../../static/img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.head-center-mobile .btn-nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 80px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.head-center-mobile .btn-nav span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #888;
+    border-radius: 1px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.head-center-mobile .btn-nav span:nth-child(1) {
+    margin-top: 40px;
+}
+
+.head-center-mobile .btn-nav span:nth-child(n+2) {
+    margin-top: 10px;
+}
+
+.head-center-mobile .btn-nav.close-nav span:nth-child(1),
+.head-center-mobile .btn-nav.close-nav span:nth-child(3) {
+    -webkit-transition-delay: .8s;
+    transition-delay: .8s;
+}
+
+.head-center-mobile .btn-nav.active {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.head-center-mobile .btn-nav.active span:nth-child(1) {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+}
+
+.head-center-mobile .btn-nav.active span:nth-child(3) {
+    -webkit-transform: translateY(-12px) rotate(90deg);
+    transform: translateY(-12px) rotate(90deg);
+}
+
+.head-center-nav-mobile {
+    display: none;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+}
+
+.head-center-nav-mobile .nav-list-mobile {
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 20px;
+    color: #888
+}
+
+.head-center-nav-mobile .nav-list-mobile a {
+    color: #888;
+}
+
+.head-center-nav-mobile .nav-list-mobile:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #888;
+}
+
+.banner {
+    width: 100%;
+    height: 150px;
+}
+
+.banner .banner-center {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: url(../../static/img/banner.jpg) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+/* 家居部分样式 */
+.continer .continer-center {
+    width: 100%;
+}
+
+.continer .continer-center .project-furnishing,
+.continer .continer-center .project-office,
+.continer .continer-center .project-restaurant,
+.continer .continer-center .project-more {
+    height: auto;
+}
+
+.continer .continer-center .common-title {
+    height: auto;
+}
+
+.continer .continer-center .project-nav-box {
+    width: 100%;
+    height: 60px;
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+
+.continer .continer-center .project-nav-mobile {
+    display: block;
+    width: 280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.continer .continer-center .continer-nav {
+    width: auto;
+    text-indent: 20px;
+}
+
+.continer .continer-center .project-nav-mobile .pro-nav-list-mobile {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    border-radius: 6px;
+}
+
+.continer .continer-center .project-nav-mobile .pro-nav-list-mobile:first-of-type {
+    margin-left: 0;
+}
+
+.continer .continer-center .project-nav-mobile .pro-nav-list-mobile.active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.continer .furnishing-box-1 {
+    width: 360px;
+    height: auto;
+    overflow: visible;
+    margin: 20px auto 0;
+}
+
+.continer .furnishing-box-1 .project-img-1,
+.continer .furnishing-box-1 .project-img-2,
+.continer .furnishing-box-1 .project-img-3 {
+    float: none;
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+.continer .continer-center .furnishing-box-1.office,
+.continer .continer-center .furnishing-box-1.restaurant,
+.continer .continer-center .furnishing-box-1.more {
+    margin-top: 0;
+}
+
+/* container样式结束 */
+
+/* 底部样式开始 */
+.foot {
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+    margin-top: 20px;
+}
+
+.foot .foot-center {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.foot .foot-center .foot-center-left {
+    text-align: center;
+    position: static;
+    width: 100%;
+    height: 75px;
+    font-size: 16px;
+    color: #767676;
+    overflow: hidden;
+}
+
+.foot .foot-center .foot-center-left>p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.foot .foot-center .foot-center-left .media-box {
+    position: relative;
+    width: 140px;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.foot .foot-center .foot-center-middle {
+    position: static;
+    width: 100%;
+    height: 75px;
+    left: auto;
+    top: auto;
+    border-right: none;
+    border-left: none;
+    text-indent: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #767676;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.foot .foot-center .foot-center-right {
+    position: static;
+    width: 100%;
+    height: 75px;
+    right: auto;
+    top: auto;
+    text-indent: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #767676;
+}
+
+.foot .foot-center .foot-center-left .weibo {
+    position: static;
+    float: left;
+    width: 25px;
+    height: 25px;
+    left: auto;
+    top: auto;
+    margin-right: 22%;
+    background: url(../../static/img/xl.png) no-repeat 0 0;
+}
+
+.foot .foot-center .foot-center-left .qq {
+    position: static;
+    float: left;
+    width: 25px;
+    height: 25px;
+    left: auto;
+    top: auto;
+    margin-right: 22%;
+    background: url(../../static/img/qq.png) no-repeat 0 0;
+}
+
+.foot .foot-center .foot-center-left .wx {
+    position: static;
+    float: left;
+    width: 25px;
+    height: 25px;
+    left: auto;
+    top: auto;
+    background: url(../../static/img/wx.png) no-repeat 0 0;
+}
+
+/* 底部样式结束 */
